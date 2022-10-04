@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+    <header>
+        <h1>Jogo da Velha</h1>
+        <div id="cabecalho">
+          <h2>Jogador da vez: <span id="sJogadorDaVez">X</span></h2>
+          <div id="placar">
+            <p class="placar">X:<span class="placarIndividual" id="placarX">0</span></p>
+            <p class="placar">O:<span class="placarIndividual" id="placarO">0</span></p>
+            <p class="placar">Empate:<span class="placarIndividual" id="placarEmpate">0</span></p>
+          </div>
+        </div>
+        <div id="tempo">
+          <div id="relogio"><span id="hora">00</span> : <span id="minutos">00</span> : <span id="segundos">00</span></div>
+          <div id="recorde"><span>O melhor tempo foi <span id="msgRecorde"></span></span></div>
+        </div>
+    </header>
+
+    <main>
+      <div id="area">
+        <div id="tabuleiro">
+              <span class="casa"></span>
+              <span class="casa"></span>
+              <span class="casa"></span>
+              <span class="casa"></span>
+              <span class="casa"></span>
+              <span class="casa"></span>
+              <span class="casa"></span>
+              <span class="casa"></span>
+              <span class="casa"></span>
+        </div>
+        <div id="mensagens">
+          <p id="vencedor"></p>
+          <button class="bt" id="btRecomecar">Novo Jogo</button>
+          <button class="bt" id="btJogar">Mais Uma</button>
+        </div>
+      </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
